@@ -24,19 +24,19 @@ The use is very simple, extend the class add your regional holidays and create t
 	     */
 	    public function addRegionalHolidays($year)
 	    {
-	        //Fixed Days
-	        $feriados = array(
-	            array('day'=>4,'month'=>6),
-	            array('day'=>12,'month'=>10),
-	        );
-	        foreach ($feriados as $feriado) {
-	            $this->addHoliday($feriado);
-	        }
-			//Variable day
-			$this->addVariableHoliday(4, 11, $year, 4); #Thanksgiving: November's 4th Thursday
-
-			//In Venezuela Carnival and Easter are holidays so we call this method to add both
-			$this->getCarnival();
+            //Fixed Days
+            $dates = array(
+                array('day'=>4,'month'=>6),
+                array('day'=>12,'month'=>10),
+            );
+            foreach ($dates as $date) {
+                $this->addHoliday($date);
+            }
+            //Variable day
+            $this->addVariableHoliday(4, 11, $year, 4); #Thanksgiving: November's 4th Thursday
+            
+            //In Venezuela Carnival and Easter are holidays so we call this method to add both
+            $this->getCarnival();
 	    }
 	}
 
