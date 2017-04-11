@@ -1,0 +1,21 @@
+{
+  "name": "diohz0r/holidays",
+  "description": "add and check holidays for your project",
+  "minimum-stability": "stable",
+  "license": "GNU GPL",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Domingo Oropeza",
+      "email": "dioh_@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Holidays\\": "src/Holidays"
+    }
+  },
+  "require": {
+    "php": ">=5.3.0"
+  }
+}
