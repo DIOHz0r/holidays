@@ -194,7 +194,7 @@ abstract class AbstractHoliday implements HolidayInterface
         $month = date("n", strtotime($date));
         $day = date("j", strtotime($date));
         foreach ($this->holidays as $holiday) {
-            if ($holiday['day'] == $day && $this['month'] == $month) {
+            if ($holiday['day'] == $day && $holiday['month'] == $month) {
                 return true;
             }
         }
