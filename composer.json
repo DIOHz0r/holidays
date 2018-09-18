@@ -1,8 +1,12 @@
 {
   "name": "diohz0r/holidays",
   "description": "add and check holidays for your project",
+  "keywords": [
+    "holiday",
+    "vacation"
+  ],
   "minimum-stability": "stable",
-  "license": "GNU GPL",
+  "license": "GPL-3.0-or-later",
   "type": "library",
   "authors": [
     {
